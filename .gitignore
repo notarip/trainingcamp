@@ -68,3 +68,7 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+*.class
+target
+target-eclipse
+.settings
