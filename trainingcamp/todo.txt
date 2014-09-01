@@ -1,0 +1,33 @@
+- Validaciones contra los roles para la asignacion a un campo
+- Ver si vale la pena asociar coach --> user
+- Crear entidades: 
+- pasaar las historias de usuario
+- pasar el diagrama de entidades
+
+
+entidades:
+
+user: usuarios genericos del sistema
+roles: roles que puede tener un user
+camp: campos de entrenamiento 
+training: entrenamiento, agrupa varios done, puede relacionarce con una routine o se libre
+routine: rutina que tiene un user esta compuesta de varios exercises
+exercise: todos los ejercicios que se pueden planificar en una rutina. 
+done: exercises que se hicieron, vienen con cuantificadores
+events: eventos genericos, en principio son comentarios que se pueden asiociar a cualquier entidad
+
+sintesis:
+Es un sitio muy orientado a movile que permite a los usuarios y entrenadores gestionar los entrenamientos.
+
+historias:
+
+
+- Como usuario: darme de alta en el sistema, con nombre, email y password
+- como usuario: asociar mi cuenta a un gimnacio con un id unico que me provea el gym
+- como gim: recibir la informacion de todos los usuarios que me tienen asociados
+- como gim: poder cargar las rutinas de mis usuarios
+- como user: poder cargar mis entrenamientos
+- como user: poder elegir si entreno libre o voy a hacer una rutina
+- como user: quiero recibir una notificacion si mi entrenador cambia algo de mi rutina !!
+- como gim: poder cambiar la rutina y comentar los entrenamientos !!
+- como user: incluir el los comentarios a otro user(tipo twitter)
