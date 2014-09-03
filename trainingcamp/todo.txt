@@ -3,8 +3,10 @@
 - Crear entidades: 
 - pasaar las historias de usuario
 - pasar el diagrama de entidades
+- Escribor las hitorias en formato BDD (behavior driven design)(*)
 
 
+---------------------------------------------
 entidades:
 
 user: usuarios genericos del sistema
@@ -19,15 +21,80 @@ events: eventos genericos, en principio son comentarios que se pueden asiociar a
 sintesis:
 Es un sitio muy orientado a movile que permite a los usuarios y entrenadores gestionar los entrenamientos.
 
+
+----------------------------------------------
+
 historias:
 
 
-- Como usuario: darme de alta en el sistema, con nombre, email y password
-- como usuario: asociar mi cuenta a un gimnacio con un id unico que me provea el gym
+- como user: darme de alta en el sistema, con nombre, email y password
+- como user: asociar mi cuenta a un campo con un id unico que me provea el campo
 - como gim: recibir la informacion de todos los usuarios que me tienen asociados
-- como gim: poder cargar las rutinas de mis usuarios
-- como user: poder cargar mis entrenamientos
-- como user: poder elegir si entreno libre o voy a hacer una rutina
-- como user: quiero recibir una notificacion si mi entrenador cambia algo de mi rutina !!
-- como gim: poder cambiar la rutina y comentar los entrenamientos !!
-- como user: incluir el los comentarios a otro user(tipo twitter)
+- como camp: poder cargar las rutinas de mis usuarios
+- como user: poder cargar mis trainings
+- como user: poder elegir si entreno libre o voy a hacer una routine
+- como user: quiero recibir una notificacion si mi coach cambia algo de mi routine !!
+- como camp: poder cambiar la routine y comentar los trainings !!
+- como user: incluir el los comments a otro user(tipo twitter)
+
+***
+Historia: Alta de Usuario
+Como: Usuario 
+Para: Poder utilizar el sistema 
+Quiero: Darme de alta en el sistema con nombre y email
+
+***
+Historia: Asociarme a un Campo de Entrenamiento
+Como: Usuario 
+Para: Poder interactuar con un campo de entrenamiento determinado 
+Quiero: Asociarme a uno o varios campos de entrenamiento con el id de socio que me provea el campo
+
+***
+Historia: Ver usuarios asociados
+Como: Campo
+Para: Poder interactuar con un los usuaios que pertenecen a mi campo de entrenamiento
+Quiero: Ver un listado de los usuarios que estan asociados a mi campo de entrenamiento
+
+***
+Historia: Cargar rutinas de mis usuarios
+Como: Campo
+Para: Administar las rutinas de los usuarios que pertencen a mi campo
+Quiero: Poder cargar las rutinas correspondientes a un usuario que este asociado a mi campo de entrenamiento
+
+***
+Historia: Cargar mis entrenamientos
+Como: Usuario
+Para: Llevar un registro de los entrenamientos que hice
+Quiero: Poder cargar los entrenamientos que hice
+
+***
+Historia: Cargar mis entrenamientos II
+Como: Usuario
+Para: Llevar un registro de los entrenamientos que hice
+Quiero: Poder cargar los entrenamientos asociados a una rutina o como entrenamiento libre
+
+***
+Historia: Recibir notificaciones
+Como: Usuario
+Para: Saber si mi coach reviso mi entrenamiento
+Quiero: Recibir notificaciones si mi entrenador cambia algo de mi rutina
+
+
+***
+Historia: Cambiar la rutinas
+Como: Campo
+Para: Adecuar las rutinas a los usuarios dinamicamente
+Quiero: Poder cambiar las rutinas de los usuarios
+
+***
+Historia: Comentar la rutinas/entrenamientos
+Como: Campo
+Para: Hacer un seguimiento personalizado de los usuarios
+Quiero: Poder comentar las rutinas y los entrenamientos de los usuarios
+
+***
+Historia: Eligir privacidad
+Como: Usuario
+Para: Dar o no una visión global de mi actividad fisica a los distintos campos/entrenadores
+Quiero: Poder cambiar la visibilidad de las rutinas y entrenamientos 
+
