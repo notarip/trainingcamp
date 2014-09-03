@@ -32,6 +32,7 @@ class BootStrap {
 		
 		
 		mega1.addToUsers(pablo)
+		mega1.addToAdmins(pablo)
 		mega1.addToAdmins(jose)
 		mega1.addToCoachs(jose)
 		mega1.save()
