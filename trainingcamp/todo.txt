@@ -15,7 +15,7 @@ camp: campos de entrenamiento
 training: entrenamiento, agrupa varios done, puede relacionarce con una routine o se libre
 routine: rutina que tiene un user esta compuesta de varios exercises
 exercise: todos los ejercicios que se pueden planificar en una rutina. 
-done: exercises que se hicieron, vienen con cuantificadores
+workout: exercises que se hicieron, vienen con cuantificadores
 events: eventos genericos, en principio son comentarios que se pueden asiociar a cualquier entidad
 
 sintesis:
@@ -28,8 +28,8 @@ historias:
 
 
 - como user: darme de alta en el sistema, con nombre, email y password
-- como user: asociar mi cuenta a un campo con un id unico que me provea el campo
-- como gim: recibir la informacion de todos los usuarios que me tienen asociados
+- como user: asociar mi cuenta a un campo 
+- como camp: recibir la informacion de todos los usuarios que me tienen asociados
 - como camp: poder cargar las rutinas de mis usuarios
 - como user: poder cargar mis trainings
 - como user: poder elegir si entreno libre o voy a hacer una routine
@@ -47,7 +47,7 @@ Quiero: Darme de alta en el sistema con nombre y email
 Historia: Asociarme a un Campo de Entrenamiento
 Como: Usuario 
 Para: Poder interactuar con un campo de entrenamiento determinado 
-Quiero: Asociarme a uno o varios campos de entrenamiento con el id de socio que me provea el campo
+Quiero: Asociarme a uno o varios campos de entrenamiento
 
 ***
 Historia: Ver usuarios asociados

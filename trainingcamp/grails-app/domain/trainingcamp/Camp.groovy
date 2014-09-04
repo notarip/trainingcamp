@@ -1,8 +1,13 @@
 package trainingcamp
 
 
+import org.apache.commons.logging.LogFactory
+
+
 class Camp {
 
+	static final log = LogFactory.getLog(this)
+	
     String name
 
     static hasMany = [users: User, admins:User, coachs:User]
@@ -25,11 +30,12 @@ class Camp {
 					break
 				}
 			}
-		}else{
-			throw new Exception("El usuario debe ser admin") 
-		}		
+		}
+		if(!itsOk)
+			 log.error "El usuario debe ser ADMIN"
+		
+				
 	}
-	
 	
 	
 	@Override

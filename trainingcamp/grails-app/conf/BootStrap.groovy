@@ -40,8 +40,7 @@ class BootStrap {
 		mega2.addToUsers(pablo)
 		mega2.addToAdmins(pepe)
 		mega2.addToCoachs(jose)		
-		mega2.save()
-						
+		mega2.save()						
 		
     }
     def destroy = {
